@@ -1,0 +1,99 @@
+body{
+    margin: 0%;
+    background-color: #696969;
+    font-family:'メイリオ', 'Meiryo', sans-serif;
+}
+
+#navmenu{
+    padding: 10px;
+    position: fixed;left: 0%;
+    width: 15%;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+#navmenu ul{
+    list-style: none;
+    margin: 0%;
+    padding: 0%;
+}
+
+#navmenu a{
+    text-decoration: none;
+    display: block;
+    width: 100%;
+    position: relative;
+    text-align: center;
+    overflow: hidden;
+    padding: 20px 10px;
+    color: lightskyblue;
+}
+
+#navmenu a::after{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: block;
+    content: "";
+    width: 0%;
+    height: 2px;
+    background-color: pink;
+    transition: all 0.2s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+}
+
+#navmenu span{
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+    transition: all 0.2s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+}
+
+#navmenu span.ja{
+    position: absolute;
+    top: 100%;
+    left: 0%;
+    font-size: 14px;
+    font-weight: bold;
+    white-space: nowrap;
+    color: pink;
+}
+
+#navmenu a:hover::after{
+    width: 90%;
+}
+
+#navmenu a:hover span.en{
+    transform: translate(0%, -160%);
+}
+
+#navmenu a:hover span.ja{
+    top: 25%;
+}
+
+.maindiv{
+    color: #fffafa;
+    margin-left: 15%;
+    width: 85%;
+    padding: 10%;
+    box-sizing: border-box;
+    background-image: url(image/back.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.homediv{
+    text-align: center;
+}
+
+.under{
+    text-decoration: underline;
+}
+
+.contentdiv{
+    width: 80%;
+    margin: auto;
+}
+
+img{
+    width: 80%;
+}
